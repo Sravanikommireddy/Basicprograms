@@ -1,0 +1,25 @@
+public class Armstrong {
+	public static void main(String[]args)
+	{
+		int a = 153;
+		int rem, result =0;
+		int b= a;
+		
+		while (a>0) {
+			rem = a%10;
+			result = (rem*rem*rem)+result;
+			a= a/10;
+			b= a;
+		}
+		if(b==a) {
+			System.out.println("it is an armstrong number");
+			
+		}
+		else {
+			System.out.println("it is not an armstrong number");
+			
+		}
+			
+	}
+
+}
